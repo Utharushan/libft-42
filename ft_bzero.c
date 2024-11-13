@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 22:43:42 by marvin            #+#    #+#             */
-/*   Updated: 2024/09/30 22:43:42 by marvin           ###   ########.fr       */
+/*   Created: 2024/11/13 23:25:34 by marvin            #+#    #+#             */
+/*   Updated: 2024/11/13 23:25:34 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stddef.h>
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+void	ft_bzero(void *s, size_t n)
 {
-	char	*subst;
-	size_t	size;
+	unsigned char	*ptr;
 
-	if (!s)
-		return (NULL);
-	if (start >= ft_strlen(s))
-		return (ft_strdup(""));
-	size = ft_strlen(s + start);
-	if (size < len)
-		len = size;
-	subst = (char *)malloc(sizeof(char) * (len + 1));
-	if (!subst)
-		return (NULL);
-	ft_strlcpy(subst, s + start, len + 1);
-	return (subst);
+	ptr = (unsigned char *)s;
+	while (n--)
+	{
+		*ptr = 0;
+		ptr++;
+	}
 }
