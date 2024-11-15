@@ -9,7 +9,7 @@
 /*   Updated: 2024/11/15 00:13:33 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.c"
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
