@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-static int	is_in_set (char c, const char *set)
+static int	is_in_set(char c, const char *set)
 {
 	int	i;
 
@@ -25,7 +25,7 @@ static int	is_in_set (char c, const char *set)
 	return (0);
 }
 
-char *ft_strtrim(const char *s1, const char *set)
+char	*ft_strtrim(const char *s1, const char *set)
 {
 	size_t	start;
 	size_t	end;

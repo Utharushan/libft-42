@@ -56,23 +56,22 @@ static void	free_words(char **words, int i)
 	free(words);
 }
 
-char	**ft_split(const char *s, char c)
+static char	**allocate_words(const char *s, char c, char **words)
 {
-	char	**words;
-	int		i;
+	int	i;
 
-	if (!s || !(words = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1))))
-		return (NULL);
 	i = 0;
 	while (*s)
 	{
 		if (*s != c)
 		{
-			if (!(words[i++] = allocate_word(s, c)))
+			words[i] = allocate_word(s, c);
+			if (!words[i])
 			{
 				free_words(words, i - 1);
 				return (NULL);
 			}
+			i++;
 			while (*s && *s != c)
 				s++;
 		}
@@ -81,4 +80,18 @@ char	**ft_split(const char *s, char c)
 	}
 	words[i] = NULL;
 	return (words);
+}
+
+char	**ft_split(const char *s, char c)
+{
+	char	**words;
+	int		word_count;
+
+	if (!s)
+		return (NULL);
+	word_count = count_words(s, c);
+	words = (char **)malloc(sizeof(char *) * (word_count + 1));
+	if (!words)
+		return (NULL);
+	return (allocate_words(s, c, words));
 }

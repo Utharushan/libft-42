@@ -20,12 +20,11 @@ int	ft_atoi(const char *str)
 {
 	int	atoi;
 	int	i;
-	int sign;
+	int	sign;
 
 	atoi = 0;
 	i = 0;
 	sign = 1;
-
 	while (is_space(str[i]))
 		i++;
 	if (str[i] == '+' || str[i] == '-')
