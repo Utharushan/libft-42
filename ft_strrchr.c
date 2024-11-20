@@ -13,16 +13,16 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*last_occurrence;
+	const char	*last_occurrence;
 
 	last_occurrence = NULL;
 	while (*s)
 	{
-		if (*s == (char)c)
+		if ((unsigned char)*s == (unsigned char)c)
 			last_occurrence = (char *)s;
 		s++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)s);
-	return (last_occurrence);
+	return ((char *)last_occurrence);
 }
