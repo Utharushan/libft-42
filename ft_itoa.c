@@ -9,7 +9,7 @@
 /*   Updated: 2024/11/13 23:04:53 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 static int	get_num_len(int n)
 {

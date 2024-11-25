@@ -57,7 +57,7 @@ BONUS		=	ft_lstadd_back_bonus.c \
 BONUS_OBJS	= $(BONUS:.c=.o)
 
 CC			= gcc
-RM			= rm -f
+RM			= rm -rf
 CFLAGS		= -Wall -Wextra -Werror
 
 NAME		= libft.a
