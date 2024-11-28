@@ -56,7 +56,7 @@ BONUS		=	ft_lstadd_back_bonus.c \
 			  ft_lstsize_bonus.c
 BONUS_OBJS	= $(BONUS:.c=.o)
 
-CC			= gcc
+CC			= cc
 RM			= rm -rf
 CFLAGS		= -Wall -Wextra -Werror
 
