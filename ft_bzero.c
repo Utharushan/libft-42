@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tuthayak <tuthayak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/13 23:25:34 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/13 23:25:34 by marvin           ###   ########.fr       */
+/*   Created: 2024/12/19 16:41:52 by tuthayak          #+#    #+#             */
+/*   Updated: 2024/12/19 16:41:52 by tuthayak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

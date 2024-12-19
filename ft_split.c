@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tuthayak <tuthayak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/13 22:45:14 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/13 22:45:14 by marvin           ###   ########.fr       */
+/*   Created: 2024/12/19 17:30:58 by tuthayak          #+#    #+#             */
+/*   Updated: 2024/12/19 17:30:58 by tuthayak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	count_words(const char *s, char c)

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tuthayak <tuthayak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/13 23:04:53 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/13 23:04:53 by marvin           ###   ########.fr       */
+/*   Created: 2024/12/19 16:43:24 by tuthayak          #+#    #+#             */
+/*   Updated: 2024/12/19 16:43:24 by tuthayak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	get_num_len(int n)

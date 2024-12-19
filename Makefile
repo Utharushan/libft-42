@@ -3,12 +3,13 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: tuthayak <tuthayak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/11/13 22:17:56 by marvin            #+#    #+#              #
-#    Updated: 2024/11/13 22:17:56 by marvin           ###   ########.fr        #
+#    Created: 2024/12/19 17:33:01 by tuthayak          #+#    #+#              #
+#    Updated: 2024/12/19 17:33:01 by tuthayak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 SRCS		=	ft_atoi.c \
 				ft_bzero.c \
 				ft_calloc.c \
